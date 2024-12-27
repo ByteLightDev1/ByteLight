@@ -8,7 +8,7 @@ Click [GUIDE](GUIDE.md) to see it.
 pip install JynPopMod
 
 ## PyPI:
-https://pypi.org/project/JynPopMod/
+[JynPopMod PyPI](https://pypi.org/project/JynPopMod/)
 
 ## License:
 This project is licensed under the [Private Use License](LICENSE.md).
