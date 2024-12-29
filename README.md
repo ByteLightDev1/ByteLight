@@ -1,6 +1,9 @@
 # JynPopMod:
 JynPopMod is a module that adds functions...
 
+## Version:
+[VERSION](Ver.md).
+
 ## Guide:
 Click [GUIDE](GUIDE.md) to see it.
 
