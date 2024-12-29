@@ -369,3 +369,83 @@
 84. **`track_mouse_position(callback)`**
     - **`callback`**: The function to call with the mouse's position as arguments.
     - **What it does**: Tracks the mouse position and calls `callback()` with the current `(x, y)` position.
+85. **`show_error_messagebox(message)`**  
+   - **`message`**: The error message to display.  
+   - **What it does**: Displays a message box with the title "Error" and the provided message.
+86. **`start_background_task(backtask)`**  
+   - **`backtask`**: The function to execute in the background.  
+   - **What it does**: Starts a separate thread to run the provided function without blocking the main program.
+
+87. **`nocrash(func)`**  
+   - **`func`**: The function to wrap in a crash-preventing decorator.  
+   - **What it does**: Executes the function safely, preventing unhandled exceptions from crashing the program.
+
+88. **`contains_swears_better(text)`**  
+   - **`text`**: The input string to check.  
+   - **What it does**: Returns `True` if the text contains any profane words; otherwise, `False`.
+
+89. **`filter_profanity_in_text(text)`**  
+   - **`text`**: The input string to filter.  
+   - **What it does**: Censors profanity in the provided text by replacing inappropriate words with asterisks.
+
+90. **`speech_to_text_with_filter()`**  
+   - **No arguments.**  
+   - **What it does**: Listens for speech input, converts it to text, and filters any profanity.
+
+91. **`get_system_uptime()`**  
+   - **No arguments.**  
+   - **What it does**: Returns the system uptime in seconds since the last boot.
+
+92. **`download_image_from_url(image_url, save_path)`**  
+   - **`image_url`**: The URL of the image to download.  
+   - **`save_path`**: The local path to save the image.  
+   - **What it does**: Downloads an image from the specified URL and saves it to the given path.
+
+93. **`monitor_new_files(directory, callback)`**  
+   - **`directory`**: The folder to monitor.  
+   - **`callback`**: The function to call when new files are detected.  
+   - **What it does**: Continuously checks the directory for new files and triggers the callback with the new file names.
+
+94. **`check_if_file_exists(file_path)`**  
+   - **`file_path`**: The path of the file to check.  
+   - **What it does**: Returns `True` if the file exists, otherwise `False`.
+
+95. **`check_internet_connection()`**  
+   - **No arguments.**  
+   - **What it does**: Pings a server (e.g., Google) to check for an active internet connection. Returns `True` if connected.
+
+96. **`create_web_server(directory, port=8000)`**  
+   - **`directory`**: The directory to serve files from.  
+   - **`port`**: The port number for the web server (default: 8000).  
+   - **What it does**: Starts a simple HTTP server that serves files from the specified directory.
+
+97. **`create_web_server(html, port=8000)`**  
+   - **`html`**: The HTML content to serve.  
+   - **`port`**: The port number for the web server (default: 8000).  
+   - **What it does**: Hosts a web server displaying the provided HTML content.
+
+98. **`uppercase_list(lst)`**  
+   - **`lst`**: A list of strings.  
+   - **What it does**: Converts each string in the list to uppercase and returns the modified list.
+
+99. **`remove_duplicates(lst)`**  
+   - **`lst`**: A list of items.  
+   - **What it does**: Removes duplicate elements from the list and returns a new list with unique items.
+
+100. **`find_index(lst, element)`**  
+   - **`lst`**: The list to search.  
+   - **`element`**: The element to find.  
+   - **What it does**: Returns the index of the element in the list, or `-1` if not found.
+
+101. **`random_element(lst)`**  
+   - **`lst`**: A list of items.  
+   - **What it does**: Returns a random item from the list, or `None` if the list is empty.
+
+102. **`validate_email(email)`**  
+   - **`email`**: The email address to validate.  
+   - **What it does**: Returns `True` if the email matches a standard pattern; otherwise, `False`.
+
+103. **`split_into_chunks(text, chunk_size)`**  
+   - **`text`**: The string to split.  
+   - **`chunk_size`**: The size of each chunk.  
+   - **What it does**: Splits the text into smaller chunks of the specified size and returns a list of chunks.  
