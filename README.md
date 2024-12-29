@@ -1,5 +1,5 @@
 # JynPopMod:
-JynPopMod is a secure software for securing your sensitive data...
+JynPopMod is a module that adds functions...
 
 ## Guide:
 Click [GUIDE](GUIDE.md) to see it.
