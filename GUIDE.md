@@ -449,3 +449,129 @@
    - **`text`**: The string to split.  
    - **`chunk_size`**: The size of each chunk.  
    - **What it does**: Splits the text into smaller chunks of the specified size and returns a list of chunks.  
+
+104. `evaluate_text_length(text)`**  
+   - **`text`**: The string to analyze.  
+   - **What it does**: Splits the input text into sentences and words. Calculates the average length of words and the average number of words per sentence. Returns a tuple containing the average word length and the average sentence length.  
+
+105. `sentiment_analysis(text)`**  
+   - **`text`**: The string to analyze.  
+   - **What it does**: Analyzes the sentiment of the text and returns:
+     - "Positive" if the sentiment is positive.
+     - "Negative" if the sentiment is negative.
+     - "Non Pos Non Neg" if the sentiment is neutral.
+
+106. `analyze_text(text)`**  
+   - **`text`**: The string to analyze.  
+   - **What it does**: Performs a comprehensive analysis of the text, including:
+     - Word count, sentence count, word frequencies, sentiment analysis, average word and sentence length, and keyword extraction.  
+   - **Returns**: A dictionary containing all analysis results.
+
+107. `unique_elements(lst)`**  
+   - **`lst`**: The list of elements.  
+   - **What it does**: Removes duplicate elements from the list and returns a list of unique elements.
+
+108. `sum_list(lst)`**  
+   - **`lst`**: The list of numbers.  
+   - **What it does**: Sums all the numbers in the list and returns the total sum.
+
+109. `reverse_list(lst)`**  
+   - **`lst`**: The list of elements.  
+   - **What it does**: Reverses the order of elements in the list and returns the reversed list.
+
+110. `is_prime(n)`**  
+   - **`n`**: The number to check for primality.  
+   - **What it does**: Checks if the number `n` is prime by testing divisibility from 2 up to the square root of `n`. Returns `True` if the number is prime, and `False` otherwise.
+
+111. `shorten_text(text, length)`**  
+   - **`text`**: The string to shorten.  
+   - **`length`**: The maximum length of the shortened string.  
+   - **What it does**: Shortens the input text to the specified length. If the text is longer than the length, it appends "..." at the end.
+
+112. `word_count(text)`**  
+   - **`text`**: The string to analyze.  
+   - **What it does**: Counts the number of words in the text and returns the word count.
+
+113. `is_valid_phone_number(phone_number)`**  
+   - **`phone_number`**: The phone number to validate.  
+   - **What it does**: Validates the phone number based on a regular expression pattern. Returns `True` if the phone number matches the pattern (international format), otherwise returns `False`.
+
+114. `clean_null(data)`**  
+   - **`data`**: The list or dictionary to clean.  
+   - **What it does**: Removes `None`, empty strings, empty lists, empty dictionaries, and `False` values from the data. Returns the cleaned list or dictionary.
+
+115. `calculate_average(numbers)`**  
+   - **`numbers`**: The list of numbers to average.  
+   - **What it does**: Calculates the average (mean) of the numbers in the list. Returns the average value. If the list is empty, returns `0`.
+
+116. `calculate_median(numbers)`**  
+   - **`numbers`**: The list of numbers to find the median.  
+   - **What it does**: Sorts the numbers and calculates the median:
+     - If the list has an odd number of elements, returns the middle number.
+     - If the list has an even number of elements, returns the average of the two middle numbers.
+
+117. `count_words(text)`**  
+   - **`text`**: The string to analyze.  
+   - **What it does**: Counts the number of words in the text by identifying word boundaries and returns the word count.
+
+118. `count_sentences(text)`**  
+   - **`text`**: The string to analyze.  
+   - **What it does**: Counts the number of sentences in the text by splitting it based on sentence-ending punctuation (e.g., `.`, `!`, `?`). Returns the sentence count.
+
+119. `word_frequencies(text)`**  
+   - **`text`**: The string to analyze.  
+   - **What it does**: Calculates the frequency of each word in the text (case-insensitive) and returns a dictionary with words as keys and their frequencies as values.
+
+120. `common_words(text1, text2)`**  
+   - **`text1`**: The first string to compare.  
+   - **`text2`**: The second string to compare.  
+   - **What it does**: Finds the common words between the two input texts. Returns a list of the words that appear in both texts.
+
+121. `extract_keywords(text, n=5)`**  
+   - **`text`**: The string to analyze.  
+   - **`n`**: The number of keywords to extract (default is 5).  
+   - **What it does**: Extracts the top `n` keywords from the text using the **TF-IDF** (Term Frequency-Inverse Document Frequency) method, excluding common stop words. Returns a list of the top `n` keywords based on their importance.
+
+ 122. **`evaluate_text_length(text)`**  
+   - **`text`**: The string to analyze.  
+   - **What it does**: Analyzes the text and calculates two key metrics:  
+     - **Average word length**: The average number of characters per word.  
+     - **Average sentence length**: The average number of words per sentence.  
+   - **Returns**: A tuple containing `avg_word_length` and `avg_sentence_length`.
+
+ 123. **`sentiment_analysis(text)`**  
+   - **`text`**: The string to analyze.  
+   - **What it does**: Performs sentiment analysis using **TextBlob** to determine whether the text is:
+     - Positive (if the polarity score is greater than 0),
+     - Negative (if the polarity score is less than 0),
+     - Neutral (if the polarity score is exactly 0).  
+   - **Returns**: A string: `"Positive"`, `"Negative"`, or `"Non Pos Non Neg"`.
+
+ 124. **`Jai(question)`**  
+   - **`question`**: A string containing the question you want to ask.  
+   - **What it does**: Uses **JynAi** to get an answer.**Use internet for better answers!**
+   - **Returns**: A string containing the generated response.
+
+ 125. **`replace(string, replacement, replacment)`**  
+   - **`string`**: The original string.  
+   - **`replacement`**: The substring to be replaced.  
+   - **`replacment`**: The new substring that will replace the old one.  
+   - **What it does**: Replaces the first substring (`replacement`) in the original string with the new substring (`replacment`).  
+   - **Returns**: The modified string with the replacement.
+
+ 126. **`contains(string1, wic)`**  
+   - **`string1`**: The string to search within.  
+   - **`wic`**: The characters or substring to look for.  
+   - **What it does**: Checks if the string contains any of the characters or substrings provided in `wic`. It uses regular expressions to search for the matches.  
+   - **Returns**: `True` if any matching characters or substrings are found; otherwise, `False`.
+
+ 127. **`split(string, strip_chars)`**  
+   - **`string`**: The string to split.  
+   - **`strip_chars`**: Characters to remove from the string.  
+   - **What it does**: Removes the specified characters (`strip_chars`) from the string and returns the cleaned string.  
+   - **Returns**: The string with the specified characters removed.
+
+ 128. **`contamath(func)`**  
+   - **`func`**: The string or expression to check.  
+   - **What it does**: Checks if the provided string or expression (`func`) contains any mathematical operators (`+`, `-`, `*`, `/`).  
+   - **Returns**: `True` if any mathematical operator is present; otherwise, `False`.
