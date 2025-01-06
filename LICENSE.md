@@ -11,7 +11,8 @@ By using this software (the "Software"), you (the "User") agree to the following
 
 3. **Restrictions**:  
    - You may not sell, lease, or sublicense the Software as a standalone product.  
-   - If using the Software in a commercial project, prior written permission from the Licensor is required.  
+   - If using the Software in a commercial project, prior written permission from the Licensor is required.(Cretid,Cr)  
+   - You may not change or (copy a part of) the original form of the Software.
 
 4. **Attribution Requirement**:  
    Any published program or project that includes the Software, in whole or in part, must include the following notice:  
