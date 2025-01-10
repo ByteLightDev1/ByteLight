@@ -11,8 +11,8 @@
    - **`message`**: A string to display in an input dialog.
    - **What it does**: Prompts the user for input through a dialog box.
 
-4. **`create_main_window()`**
-   - **What it does**: Initializes and creates the main Tkinter window for the GUI.
+4. **`main_window()`**
+   - **What it does**: Use it as a root like root = main_window().
 
 5. **`set_window_size(width, height)`**
    - **`width`**: The desired width of the window.
@@ -559,7 +559,7 @@
    - **What it does**: Replaces the first substring (`replacement`) in the original string with the new substring (`replacment`).  
    - **Returns**: The modified string with the replacement.
 
- 126. **`contains(string1, wic)`**  
+ 126. **`containsstr(string1, wic)`**  
    - **`string1`**: The string to search within.  
    - **`wic`**: The characters or substring to look for.  
    - **What it does**: Checks if the string contains any of the characters or substrings provided in `wic`. It uses regular expressions to search for the matches.  
@@ -571,7 +571,130 @@
    - **What it does**: Removes the specified characters (`strip_chars`) from the string and returns the cleaned string.  
    - **Returns**: The string with the specified characters removed.
 
- 128. **`contamath(func)`**  
+ 128. **`contamath_beta(func)`**  
    - **`func`**: The string or expression to check.  
-   - **What it does**: Checks if the provided string or expression (`func`) contains any mathematical operators (`+`, `-`, `*`, `/`).  
+   - **What it does**: Checks if the provided string or expression (`func`) contains any mathematical operators (`+`, `-`, `*`, `/` and more).  
    - **Returns**: `True` if any mathematical operator is present; otherwise, `False`.
+
+ 129. **`show_window(root)`**
+   - **What it does**: Shows the windows based on root name. 
+
+ 130. **`add_commas(input_string)`**  
+   - **`input_string`**: The string you want to add commas to.  
+   - **What it does**: Joins each character of the input string with a comma between them.  
+   - **Returns**: A string with commas inserted between each character of the input string.  
+   
+ 131. **`remove_spaces(text)`**  
+   - **`text`**: The string from which you want to remove spaces.  
+   - **What it does**: Removes all spaces from the given string.  
+   - **Returns**: A string without spaces.
+
+ 132. **`remove_spaces_andstickT(text)`**  
+   - **`text`**: The string from which spaces are to be removed.  
+   - **What it does**: Uses a regular expression to remove all types of whitespace characters from the input text.  
+   - **Returns**: A string with all spaces removed.  
+
+ 133. **`delfs(input_string, text_to_delete)`**  
+   - **`input_string`**: The string from which a specified text will be removed.  
+   - **`text_to_delete`**: The substring that will be deleted from the input string.  
+   - **What it does**: Removes all instances of `text_to_delete` from the input string.  
+   - **Returns**: A string with the specified text removed.
+
+ 134. **`rem_alphabet(text)`**  
+   - **`text`**: The string from which alphabetic characters will be removed.  
+   - **What it does**: Filters out all alphabetic characters (both uppercase and lowercase) from the string.  
+   - **Returns**: A string containing only non-alphabetic characters.
+
+ 135. **`contamath_beta(func)`**  
+   - **`func`**: The string or expression to check.  
+   - **What it does**: Checks if the provided string or expression (`func`) contains any mathematical operators (`+`, `-`, `*`, `/`, or others).  
+   - **Returns**: `True` if any mathematical operator is present; otherwise, `False`.
+
+ 136. **`add_commas(input_string)`**
+   - **`input_string`**: The string to which commas need to be added.
+   - **What it does**: Takes an input string and inserts commas between each character.
+   - **Returns**: A string with commas between each character.
+
+ 137. **`remove_spaces(text)`**
+   - **`text`**: The string from which spaces need to be removed.
+   - **What it does**: Removes all spaces from the provided string.
+   - **Returns**: A new string with no spaces.
+
+ 138. **`remove_spaces_andstickT(text)`**
+   - **`text`**: The string from which spaces need to be removed.
+   - **What it does**: Uses a regular expression to remove all whitespace (including tabs, newlines, etc.) from the string.
+   - **Returns**: A new string without any spaces or whitespace characters.
+
+ 139. **`delfs(input_string, text_to_delete)`**
+   - **`input_string`**: The string from which the text needs to be deleted.
+   - **`text_to_delete`**: The substring that should be removed from the input string.
+   - **What it does**: Removes the specified `text_to_delete` from the `input_string`.
+   - **Returns**: A new string with the specified text deleted.
+
+ 140. **`rem_alphabet(text)`**
+   - **`text`**: The string from which alphabetic characters need to be removed.
+   - **What it does**: Removes all alphabetic characters (letters) from the provided string, keeping only numbers and symbols.
+   - **Returns**: A new string with no alphabetic characters.
+
+ 141. **`hotdog(k1="", k2="", k3="", k4="", k5="")`**
+   - **`k1, k2, k3, k4, k5`**: The keys to be pressed.
+   - **What it does**: Simulates pressing a sequence of keys using `pyautogui`’s `hotkey` function. The arguments correspond to keyboard keys.
+   - **Returns**: No return value (action is executed on the system).
+
+ 142. **`keypress(key)`**
+   - **`key`**: The key to simulate pressing.
+   - **What it does**: Simulates pressing a single key on the keyboard using `pyautogui`.
+   - **Returns**: No return value (action is executed on the system).
+
+ 143. **`isequal(s, eq)`**
+   - **`s`**: The string to compare.
+   - **`eq`**: The string to check against.
+   - **What it does**: Compares two strings, ignoring case, and checks if they are equal.
+   - **Returns**: `True` if both strings are equal (case-insensitive), otherwise `False`.
+
+ 144. **`contains(s, eq)`**
+   - **`s`**: The string to check.
+   - **`eq`**: The substring to search for.
+   - **What it does**: Checks if the string `s` contains the substring `eq`, ignoring case.
+   - **Returns**: `True` if the substring `eq` is found within `s`, otherwise `False`.
+
+ 145. **`LoadingBar` (Class)**
+   - **Attributes**: 
+     - `total_steps`: The total number of steps to represent in the loading bar.
+     - `bar_length`: The length of the loading bar (default is 40).
+     - `progress`: The current progress in the loading process.
+   - **Methods**:
+     - **`load()`**: Updates the loading bar and displays the current progress.
+     - **`finish()`**: Marks the completion of the loading process by displaying a 100% progress bar.
+
+ 146. **`track_function_start_end(func)`**
+   - **`func`**: The function to track the execution of.
+   - **What it does**: Wraps a function to track its execution and update the loading bar each time the function starts or finishes.
+   - **Returns**: The original function result.
+
+ 147. **`loading_bar(code)`**
+   - **`code`**: A string containing Python code to execute.
+   - **What it does**: Counts the number of function calls in the provided code and creates a loading bar to track the execution of each function. The code is executed while the loading bar is updated in real-time.
+   - **Returns**: No return value; the code is executed and the loading bar is displayed.
+
+ 148. `nolim(func)`**
+   - **`func`**: A function that you want to apply the decorator to.
+   - **What it does**: This is a decorator that modifies the maximum number of digits allowed when converting an integer to a string. It sets the system's integer digit limit (`sys.set_int_max_str_digits`) to `99 * 99 * 99` (970299), preventing excessive number lengths during string conversion operations.
+   - **Returns**: The original function `func` after modifying the system's digit limit. The function is executed as normal, but with the updated integer-to-string digit limit in place.
+
+ 149. `parallel(*functions)`
+   - **`*functions`**: A list of functions to run in parallel.
+   - **What it does**: This function executes the provided functions concurrently by creating a new thread for each function. It starts each thread simultaneously, and waits for all threads to finish using `thread.join()`.
+   - **Returns**: No return value; the functions are executed concurrently, and the program waits for all of them to complete before moving forward.
+
+ 150. `gs(func)`
+   - **`func`**: A function whose source code you want to retrieve.
+   - **What it does**: This function uses Python's `inspect.getsource()` method to retrieve and return the source code of the provided function `func` as a string.
+   - **Returns**: A string containing the source code of the function `func`.
+
+ 151. `ccc(core_count, function, *args, **kwargs)`
+   - **`core_count`**: The number of CPU cores you want the function to run on.
+   - **`function`**: The function to execute.
+   - **`*args, **kwargs`**: Additional arguments and keyword arguments passed to the function.
+   - **What it does**: This function sets the CPU affinity to the specified number of cores (`core_count`) before executing the function. It ensures that the function is only executed on the specified number of cores. If `core_count` exceeds the available number of cores, it raises a `ValueError`.
+   - **Returns**: The result of the executed function, with the specified CPU cores applied for the execution.
