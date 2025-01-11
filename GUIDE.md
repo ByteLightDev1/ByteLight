@@ -698,3 +698,20 @@
    - **`*args, **kwargs`**: Additional arguments and keyword arguments passed to the function.
    - **What it does**: This function sets the CPU affinity to the specified number of cores (`core_count`) before executing the function. It ensures that the function is only executed on the specified number of cores. If `core_count` exceeds the available number of cores, it raises a `ValueError`.
    - **Returns**: The result of the executed function, with the specified CPU cores applied for the execution.
+
+ 152. `wait(key="s",num=1)`
+   - **`key`**: The key value to pick `(s --> second ,m --> minute ,h --> hour)`.
+   - **`num`**: The number of `s/m/h` to wait.
+   - **What it does**: This function waits the same thing that is with time.sleep function but advantaged
+   - **Returns**: Nothing just waits as like `time.sleep`.
+
+ 153. `Jynauth(func, user_name, app_name)`
+   - **`func`**: The function to execute after successful authentication. This function is passed as an argument and will be called once the OTP is verified correctly.
+   - **`user_name`**: The user's name, which is used in the QR code URI as part of the `issuer` field.
+   - **`app_name`**: The name of the app, which is included in the QR code URI to link the user with the specific application.
+   - **What it does**: 
+     - This function manages the entire process of setting up Two-Factor Authentication (2FA) using Time-based One-Time Passwords (TOTP).
+     - It generates a secret key, creates a QR code that can be scanned by an authenticator app, and provides a user interface to verify the OTP input by the user.
+     - Once the user inputs the OTP from their authenticator app, the provided function (`func`) is executed if the OTP is correct.
+   - **Returns**: 
+     - Nothing directly. It creates a window with the QR code and waits for the user to verify the OTP.
