@@ -715,3 +715,158 @@
      - Once the user inputs the OTP from their authenticator app, the provided function (`func`) is executed if the OTP is correct.
    - **Returns**: 
      - Nothing directly. It creates a window with the QR code and waits for the user to verify the OTP.
+
+ 154. `Jwin`
+   The `Jwin` class creates a Tkinter window where widgets are dynamically configured and displayed based on the layout and configuration provided. The widgets supported are created and managed in a grid layout. Here's how each widget works inside `Jwin`:
+
+1. **Button Widget**  
+   - **Widget Type**: `"button"`
+   - **Configuration**: In `widgets_config`, you can define a button with the widget type as `"button"`. You also define the `position` (which row and column it should be placed in) and optional configuration such as the `"text"` (button label) and `"id"` (a unique identifier for callbacks).
+   - **Behavior**: When the button is clicked, the corresponding callback function (if defined in `user_callbacks`) is executed.
+   - **Example**:
+     ```python
+     {"type": "button", "position": (0, 0), "options": {"text": "Click Me", "id": "button1"}}
+     ```
+
+2. **Label Widget**  
+   - **Widget Type**: `"label"`
+   - **Configuration**: A label widget displays text. You specify the `position` and optionally set the `"text"` and `"id"` for identification.
+   - **Behavior**: This widget is for displaying static text in the window.
+   - **Example**:
+     ```python
+     {"type": "label", "position": (1, 0), "options": {"text": "This is a label", "id": "label1"}}
+     ```
+
+3. **Input Field Widget**  
+   - **Widget Type**: `"input"`
+   - **Configuration**: An input field where users can type text. You can define its position and optionally provide an `"id"`.
+   - **Behavior**: Users can enter text, and the value can be retrieved using the `get_value` method.
+   - **Example**:
+     ```python
+     {"type": "input", "position": (2, 0), "options": {"id": "input1"}}
+     ```
+
+4. **Password Field Widget**  
+   - **Widget Type**: `"password"`
+   - **Configuration**: A password input field that hides the entered text (replaces with asterisks). Like the regular input field, it can be configured with `position` and `"id"`.
+   - **Behavior**: This widget hides user input and allows for secure text entry.
+   - **Example**:
+     ```python
+     {"type": "password", "position": (3, 0), "options": {"id": "password1"}}
+     ```
+
+5. **Checkbox Widget**  
+   - **Widget Type**: `"checkbox"`
+   - **Configuration**: A checkbox allows the user to toggle a true/false value. The `position` and `"text"` can be customized, and it can also have an `"id"`.
+   - **Behavior**: Users can toggle the checkbox on or off, and the state can be retrieved using `get_value`.
+   - **Example**:
+     ```python
+     {"type": "checkbox", "position": (0, 1), "options": {"text": "Accept Terms", "id": "checkbox1"}}
+     ```
+
+6. **Dropdown (Combobox) Widget**  
+   - **Widget Type**: `"dropdown"`
+   - **Configuration**: A dropdown menu that allows the user to select one option from a list. You define the `position`, a list of `"values"` to populate the dropdown, and optionally an `"id"`.
+   - **Behavior**: Users can select an option from the dropdown, and the selected value can be retrieved using `get_value`.
+   - **Example**:
+     ```python
+     {"type": "dropdown", "position": (1, 1), "options": {"values": ["Option 1", "Option 2"], "id": "dropdown1"}}
+     ```
+
+7. **Radio Buttons Widget**  
+   - **Widget Type**: `"radio"`
+   - **Configuration**: A group of radio buttons where users can choose one option. The `position` and `values` for each button can be set. Each radio button will share the same `"id"`.
+   - **Behavior**: Users can select one of the options, and the selected value is saved in a variable. You can retrieve the selected value using `get_value`.
+   - **Example**:
+     ```python
+     {"type": "radio", "position": (2, 1), "options": {"values": ["Option A", "Option B"], "id": "radio1"}}
+     ```
+
+8. **Textarea Widget**  
+   - **Widget Type**: `"textarea"`
+   - **Configuration**: A multi-line text area where users can input large amounts of text. You specify the `position` and an optional `"id"`.
+   - **Behavior**: The user can enter multiple lines of text, which can be retrieved using `get_value`.
+   - **Example**:
+     ```python
+     {"type": "textarea", "position": (3, 1), "options": {"id": "textarea1"}}
+     ```
+
+9. **Slider Widget**  
+   - **Widget Type**: `"slider"`
+   - **Configuration**: A slider widget that lets users select a value within a specified range. You define `position`, `min` and `max` values, and optionally an `"id"`.
+   - **Behavior**: Users can slide the slider to select a value, which can be retrieved using `get_value`.
+   - **Example**:
+     ```python
+     {"type": "slider", "position": (0, 2), "options": {"min": 0, "max": 100, "id": "slider1"}}
+     ```
+
+10. **Listbox Widget**  
+    - **Widget Type**: `"listbox"`
+    - **Configuration**: A listbox where multiple items can be displayed, and the user can select one. You define `position`, a list of `"values"`, and optionally an `"id"`.
+    - **Behavior**: Users can select a single item from the list, which can be retrieved using `get_value`.
+    - **Example**:
+      ```python
+      {"type": "listbox", "position": (1, 2), "options": {"values": ["Item 1", "Item 2", "Item 3"], "id": "listbox1"}}
+      ```
+
+11. **Canvas Widget**  
+    - **Widget Type**: `"canvas"`
+    - **Configuration**: A drawing area where you can add graphics. You specify the `position`, and optional `width` and `height` for the canvas.
+    - **Behavior**: This widget allows you to draw graphics on it (e.g., lines, shapes, images). The canvas can be used for custom drawings and visualizations.
+    - **Example**:
+      ```python
+      {"type": "canvas", "position": (2, 2), "options": {"width": 300, "height": 200, "id": "canvas1"}}
+      ```
+
+12. **Progressbar Widget**  
+    - **Widget Type**: `"progressbar"`
+    - **Configuration**: A progress bar that visually indicates progress. You can define the `position` and set the `mode` (e.g., "determinate" or "indeterminate").
+    - **Behavior**: The progress bar can show the current progress or run in an indeterminate mode. You can control its value programmatically and retrieve its progress.
+    - **Example**:
+      ```python
+      {"type": "progressbar", "position": (3, 2), "options": {"mode": "determinate", "id": "progressbar1"}}
+      ```
+
+13. **Spinbox Widget**  
+    - **Widget Type**: `"spinbox"`
+    - **Configuration**: A widget for selecting values within a defined range. You specify the `position`, `min`, `max`, and optionally an `"id"`.
+    - **Behavior**: Users can select an integer value from the range by spinning up or down. The selected value can be retrieved using `get_value`.
+    - **Example**:
+      ```python
+      {"type": "spinbox", "position": (0, 3), "options": {"min": 1, "max": 10, "id": "spinbox1"}}
+      ```
+ **For example**:
+
+  layout = """
+  +--------+--------+
+  |12345678|12345678|
+  |12345678|12345678|
+  |12345678|12345678|
+  +--------+--------+
+  """
+
+
+  widgets_config = [
+    {"type": "button", "position": (0, 0), "options": {"text": "Click Me", "id": "button1"}},
+    {"type": "input", "position": (1, 0), "options": {"id": "input1"}},
+    {"type": "checkbox", "position": (2, 0), "options": {"text": "Accept Terms", "id": "checkbox1"}},
+    {"type": "dropdown", "position": (0, 1), "options": {"values": ["Option 1", "Option 2", "Option 3"], "id": "dropdown1"}},
+    {"type": "textarea", "position": (1, 1), "options": {"id": "textarea1"}},
+    {"type": "slider", "position": (2, 1), "options": {"min": 0, "max": 100, "id": "slider1"}},
+  ]
+
+  def button_click_callback():
+    print("Button clicked! Running custom callback...")
+
+  def checkbox_callback():
+      print("Checkbox state changed!")
+
+  def slider_callback():
+      slider_value = dynamic_window.get_value("slider1")
+      print("Slider value:", slider_value)
+
+  user_callbacks = {
+      "button1": button_click_callback,
+      "checkbox1": checkbox_callback,
+      "slider1": slider_callback,
+  }
