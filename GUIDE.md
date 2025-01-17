@@ -835,7 +835,7 @@
       ```python
       {"type": "spinbox", "position": (0, 3), "options": {"min": 1, "max": 10, "id": "spinbox1"}}
       ```
- **For example**:
+ **For example**:```python
 
   layout = """
   +--------+--------+
@@ -870,3 +870,4 @@
       "checkbox1": checkbox_callback,
       "slider1": slider_callback,
   }
+```
