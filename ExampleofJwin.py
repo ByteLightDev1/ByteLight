@@ -1,4 +1,6 @@
-  layout = """
+from JynPopMod import Jwin
+
+layout = """
 +--------+--------+  
 |12345678|12345678|  
 |12345678|12345678|  
@@ -32,42 +34,42 @@ def checkbox_callback():
     print("Checkbox state changed!")
 
 def slider_callback():
-    slider_value = dynamic_window.get_value("slider1")  # Retrieve slider value dynamically
+    slider_value = Jwin.get_value("slider1")  # Retrieve slider value dynamically
     print("Slider value:", slider_value)
 
 def spinbox_callback():
-    spinbox_value = dynamic_window.get_value("spinbox1")  # Get value from spinbox widget
+    spinbox_value = Jwin.get_value("spinbox1")  # Get value from spinbox widget
     print("Spinbox value:", spinbox_value)
 
 def progressbar_callback():
-    progress_value = dynamic_window.get_value("progressbar1")  # Get progress from progressbar widget
+    progress_value = Jwin.get_value("progressbar1")  # Get progress from progressbar widget
     print("Progress bar value:", progress_value)
 
 def canvas_callback():
     print("Canvas interaction (e.g., drawing or click) occurred!")
 
 def listbox_callback():
-    selected_item = dynamic_window.get_value("listbox1")  # Get selected item from listbox
+    selected_item = Jwin.get_value("listbox1")  # Get selected item from listbox
     print("Listbox selected item:", selected_item)
 
 def textarea_callback():
-    text_value = dynamic_window.get_value("textarea1")  # Get text from textarea widget
+    text_value = Jwin.get_value("textarea1")  # Get text from textarea widget
     print("TextArea content:", text_value)
 
 def radio_callback():
-    selected_option = dynamic_window.get_value("radio1")  # Get selected radio button option
+    selected_option = Jwin.get_value("radio1")  # Get selected radio button option
     print("Radio button selected option:", selected_option)
 
 def dropdown_callback():
-    selected_option = dynamic_window.get_value("dropdown1")  # Get selected dropdown option
+    selected_option = Jwin.get_value("dropdown1")  # Get selected dropdown option
     print("Dropdown selected option:", selected_option)
 
 def password_callback():
-    password_value = dynamic_window.get_value("password1")  # Get entered password from password field
+    password_value = Jwin.get_value("password1")  # Get entered password from password field
     print("Password entered:", password_value)
 
 def input_callback():
-    input_value = dynamic_window.get_value("input1")  # Get input field value
+    input_value = Jwin.get_value("input1")  # Get input field value
     print("Input field value:", input_value)
 
 def label_callback():
@@ -89,3 +91,4 @@ user_callbacks = {
     "input1": input_callback,                # Input callback
     "label1": label_callback,                # Label callback
 }
+
