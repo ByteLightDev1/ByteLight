@@ -835,4 +835,4 @@
       ```python
       {"type": "spinbox", "position": (0, 3), "options": {"min": 1, "max": 10, "id": "spinbox1"}}
       ```
- **For example**:[Click to see Jwin Example](ExampleofJwin.md).
+ **For example**:[Click to see Jwin Example](ExampleofJwin.py).
