@@ -91,4 +91,6 @@ user_callbacks = {
     "input1": input_callback,                # Input callback
     "label1": label_callback,                # Label callback
 }
-
+# Runnig the created window.
+window = Jwin(layout,widgets_config,user_callbacks)
+window.run()
