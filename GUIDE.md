@@ -837,6 +837,7 @@
       ```
  **For example**:
 
+```python
 layout = """
 +--------+--------+  
 |12345678|12345678|  
@@ -928,6 +929,7 @@ user_callbacks = {
     "input1": input_callback,                # Input callback
     "label1": label_callback,                # Label callback
 }
+```
 
   155. ``exists(Filename")``:
     The `Filename` is checks if the file exists.
