@@ -1,7 +1,7 @@
-from JynPopMod import Jwin
+from JynPopMod.utils.gui_utils import *
 
 layout = """
-+--------+--------+  
++--------+--------+ 
 |12345678|12345678|  
 |12345678|12345678|  
 |12345678|12345678|  
@@ -34,43 +34,70 @@ def checkbox_callback():
     print("Checkbox state changed!")
 
 def slider_callback():
-    slider_value = Jwin.get_value("slider1")  # Retrieve slider value dynamically
-    print("Slider value:", slider_value)
+    try:
+        slider_value = window.get_value("slider1")  # Retrieve slider value through the window instance
+        print("Slider value:", slider_value)
+    except Exception as e:
+        print(f"Error retrieving slider value: {e}")
 
 def spinbox_callback():
-    spinbox_value = Jwin.get_value("spinbox1")  # Get value from spinbox widget
-    print("Spinbox value:", spinbox_value)
+    try:
+        spinbox_value = window.get_value("spinbox1")  # Get value from spinbox widget
+        print("Spinbox value:", spinbox_value)
+    except Exception as e:
+        print(f"Error retrieving spinbox value: {e}")
 
 def progressbar_callback():
-    progress_value = Jwin.get_value("progressbar1")  # Get progress from progressbar widget
-    print("Progress bar value:", progress_value)
+    try:
+        progress_value = window.get_value("progressbar1")  # Get progress from progressbar widget
+        print("Progress bar value:", progress_value)
+    except Exception as e:
+        print(f"Error retrieving progress value: {e}")
 
 def canvas_callback():
     print("Canvas interaction (e.g., drawing or click) occurred!")
 
 def listbox_callback():
-    selected_item = Jwin.get_value("listbox1")  # Get selected item from listbox
-    print("Listbox selected item:", selected_item)
+    try:
+        selected_item = window.get_value("listbox1")  # Get selected item from listbox
+        print("Listbox selected item:", selected_item)
+    except Exception as e:
+        print(f"Error retrieving listbox value: {e}")
 
 def textarea_callback():
-    text_value = Jwin.get_value("textarea1")  # Get text from textarea widget
-    print("TextArea content:", text_value)
+    try:
+        text_value = window.get_value("textarea1")  # Get text from textarea widget
+        print("TextArea content:", text_value)
+    except Exception as e:
+        print(f"Error retrieving textarea content: {e}")
 
 def radio_callback():
-    selected_option = Jwin.get_value("radio1")  # Get selected radio button option
-    print("Radio button selected option:", selected_option)
+    try:
+        selected_option = window.get_value("radio1")  # Get selected radio button option
+        print("Radio button selected option:", selected_option)
+    except Exception as e:
+        print(f"Error retrieving radio button value: {e}")
 
 def dropdown_callback():
-    selected_option = Jwin.get_value("dropdown1")  # Get selected dropdown option
-    print("Dropdown selected option:", selected_option)
+    try:
+        selected_option = window.get_value("dropdown1")  # Get selected dropdown option
+        print("Dropdown selected option:", selected_option)
+    except Exception as e:
+        print(f"Error retrieving dropdown value: {e}")
 
 def password_callback():
-    password_value = Jwin.get_value("password1")  # Get entered password from password field
-    print("Password entered:", password_value)
+    try:
+        password_value = window.get_value("password1")  # Get entered password from password field
+        print("Password entered:", password_value)
+    except Exception as e:
+        print(f"Error retrieving password: {e}")
 
 def input_callback():
-    input_value = Jwin.get_value("input1")  # Get input field value
-    print("Input field value:", input_value)
+    try:
+        input_value = window.get_value("input1")  # Get input field value
+        print("Input field value:", input_value)
+    except Exception as e:
+        print(f"Error retrieving input field value: {e}")
 
 def label_callback():
     print("Label was interacted with!")
@@ -91,6 +118,7 @@ user_callbacks = {
     "input1": input_callback,                # Input callback
     "label1": label_callback,                # Label callback
 }
-# Runnig the created window.
-window = Jwin(layout,widgets_config,user_callbacks)
+
+# Running the created window
+window = Jwin(layout, widgets_config, user_callbacks)
 window.run()
