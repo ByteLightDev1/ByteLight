@@ -1,4 +1,4 @@
-STRING/INTAGER-NUMBER-MATH util: from JynPopMod.utils.stringnum_utils import *
+STRING/INTAGER-NUMBER-MATH util: from Jstnum import *
 
 ### 1. **Base64 Encoding**
 Encodes a string into Base64 format. Useful for encoding binary data to be transmitted in text form.
@@ -432,7 +432,7 @@ Counts the number of uppercase and lowercase letters in a string.
 uppercase, lowercase = string_case_count("Hello World!")  # Returns (2, 8)
 ```
 
-CAMERA/WEBCAM-CAM utils: from JynPopMod.utils.camera_utils import *
+CAMERA/WEBCAM-CAM utils: from Jamnsee import *
 
 ### 1. **JynPopMod**
 This function simply prints a message that provides information about "JynPopMod," linking to the relevant GitHub repository.
@@ -492,7 +492,7 @@ This function captures a screenshot of your screen and saves it to the specified
 capture_screenshot("screenshot.png")  # Saves a screenshot as "screenshot.png"
 ```
 
-GUI/INTERFACE utils: from JynPopMod.utils.gui_utils import *
+GUI/INTERFACE utils: from Jui import *
 
 ### **1. `show_error_messagebox`**
 
@@ -884,7 +884,7 @@ This function sends an HTTP request to a specified URL using either the `GET` or
 response = send_http_request("http://localhost:8000", method="GET")  # Sends a GET request
 ```
 
-AUDIO/MIC utils: from JynPopMod.utils.audio_utils import *
+AUDIO/MIC utils: from Jadio import *
 
 Here’s a complete example-based guide for **all functions** in your code, written in a consistent style:
 
@@ -1090,7 +1090,7 @@ original_string = Jbtc(binary_string)
 print(original_string)  # Outputs the original text
 ```
 
-PC/COMPUTER utils: from JynPopMod.utils.pc_utils import *
+PC/COMPUTER utils: from Jynpc import *
 
 ### **1. `find_files_by_extension`**
 Finds files with a specified extension in a directory.
@@ -1371,11 +1371,7 @@ Runs a shell command and returns its output and errors.
 stdout, stderr = run_shell_command("ls -l")
 ```
 
-MAIN: from JynPopMod.module import *
-
-Here's an overview and breakdown of the functions provided, grouped by purpose, along with usage explanations and examples:
-
----
+MAIN: from JynPopMod import *
 
 ### **1. Timing and Delays**
 #### **`wait`**
