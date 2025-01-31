@@ -1,38 +1,39 @@
-**PRIVATE USE AND DERIVATIVE LICENSE AGREEMENT**  
+What Users Can Do:
+1. **Use for Personal and Non-Commercial Purposes:**  
+   Users can download and use the Software for personal projects, non-commercial projects, or educational purposes, as long as it's not for profit or commercial gain.
 
-By using this software (the "Software"), you (the "User") agree to the following terms:  
+2. **Incorporate into Larger Projects:**  
+   Users can include the Software in larger projects, either public or private, but **with proper attribution** (e.g., crediting the original author, "Jynoqtra").
 
-1. **Grant of License**:  
-   The Software is licensed to you for personal and non-commercial purposes, as well as for incorporation into your own projects, whether for private or public release.  
+3. **Modify for Personal Use:**  
+   Users can modify the Software for their own use within a larger project, as long as any modifications are clearly documented (e.g., note which parts were changed).
 
-2. **Permitted Use**:  
-   - You may use the Software as part of a larger project and publish your program, provided you include appropriate attribution to the original author (the "Licensor").  
-   - You may modify the Software as needed for your project but must clearly indicate any changes made to the original work.  
+4. **Publicly Distribute:**  
+   Users can distribute their projects that use the Software publicly, but **U must provide proper attribution** to the original author and include the required notice ("This project includes software developed by [Jynoqtra], © 2025...").
 
-3. **Restrictions**:  
-   - You may not sell, lease, or sublicense the Software as a standalone product.  
-   - If using the Software in a commercial project, prior written permission from the Licensor is required.(Credit,Cr)  
-   - You may not change or (copy a part of) the original form of the Software.
+---
 
-4. **Attribution Requirement**:  
-   Any published program or project that includes the Software, in whole or in part, must include the following notice:  
-   *"This project includes software developed by [Jynoqtra], © 2025. Used with permission under the Private Use and Derivative License Agreement."*  
+### **What Users Can't Do:**
+1. **Commercial Use Without Permission:**  
+   Users cannot use the Software for commercial purposes (e.g., selling it, using it in a product sold for profit) without any **consent** from the Licensor.
 
-5. **No Warranty**:  
-   The Software is provided "as is," without any express or implied warranties. The Licensor is not responsible for any damage or loss resulting from the use of the Software.  
+2. **Resell or Sublicense the Software:**  
+   Users cannot sell, lease, or sublicense the Software as a standalone product. The Software cannot be distributed as-is for a fee or bundled with another product for resale.
 
-6. **Ownership**:  
-   All intellectual property rights, including but not limited to copyright and trademark rights, in the Software remain with the Licensor.  
+3. **Alter or Copy the Original Software (or parts of it) Without Permission:**  
+   Users cannot modify the core form of the Software and then redistribute it as part of their project, unless U clearly state any changes made. Copying portions of the Software for redistribution or use in other projects **without the necessary modifications** is prohibited.
 
-7. **Termination**:  
-   This license will terminate immediately if you breach any of the terms and conditions set forth in this agreement.  
+4. **Failing to Give Proper Attribution:**  
+   If a user integrates the Software into any project that is shared or published, U must ensure the correct **attribution** notice is visible and readable, as specified in the agreement.
 
-8. **Governing Law**:  
-   This agreement shall be governed by the laws of [the applicable jurisdiction, without regard to its conflict of law principles].  
+---
 
-9. **Limitation of Liability**:  
-   In no event shall the Licensor be liable for any direct, indirect, incidental, special, consequential, or punitive damages, or any loss of profits, revenue, data, or use, incurred by you or any third party, whether in an action in contract, tort (including but not limited to negligence), or otherwise, even if the Licensor has been advised of the possibility of such damages.  
+### **How U Can Use the Software:**
+**1. Permission for Commercial Use or Profit**  
+If you want to use the Software for **commercial purposes** (e.g., selling a product that includes it or using it in a business), you **must get permission** from the Licensor.  
 
-Effective Date: [2025]  
+Alternatively, you can use the Software commercially **without prior permission** if you **credit "Jynoqtra" properly** by:  
+- Displaying the **Jynoqtra logo** in your commercial content.  
+- Ensuring the logo appears **clearly** in the video for **at least 3 seconds** in **HD quality** and is **easily visible** (not hidden or covered).  
 
 © 2025 [Jynoqtra]
