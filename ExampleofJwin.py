@@ -1,4 +1,4 @@
-from JynPopMod.utils.gui_utils import *
+from JynPopMod import *
 
 layout = """
 +--------+--------+ 
