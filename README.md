@@ -1,17 +1,17 @@
-# JynPopMod:
-JynPopMod is a module that adds functions...
+# ByteLight:
+ByteLight is a module that adds functions...
 
 ## Guide:
 Click [GUIDE](GUIDE.md) to see it.
 
 ## Install command:
-pip install JynPopMod
+pip install ByteLight
 
 ## PyPI:
-[JynPopMod PyPI](https://pypi.org/project/JynPopMod/)
+[ByteLight PyPI](https://pypi.org/project/JynPopMod/)
 
 ## License:
 This project is licensed under the [Private Use License](LICENSE.md).
 
 ## My youtube channel:
-[Jynoqtra YouTube](https://www.youtube.com/@Jynoqtra)
+[ByteLightDev YouTube](https://www.youtube.com/@ByteLightDev)
