@@ -166,3 +166,14 @@ from JynPopMod import *
 79. **`contains(input_list, substring)`**: Checks if the given `substring` exists within any element of `input_list`.  
 
 80. **`Jusbcam(Device_Name)`**: Scans connected USB devices and checks if `Device_Name` is present in the list of detected devices.
+
+81. **`claw()`**: Claw allows you to create a custom HTTP server with extensive control over its settings. Here are the things you can customize:
+    HTML Code – Modify the webpage content as needed.
+    IP Address – Choose which IP the server runs on.
+    Port – Set the specific port for the server.
+    Subdomains – Configure custom subdomains.
+    Return Server Logs – Enable or disable server log reporting.
+
+82. **`ConsoleCam()`**: ConsoleCam lets u record and return the new changes in console in a spesific part.
+
+83. **`prn()`**: Same function as the `print()` but yet u can type faster.
