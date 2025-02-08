@@ -36,4 +36,4 @@ Alternatively, you can use the Software commercially **without prior permission*
 - Displaying the **Jynoqtra logo** in your commercial content.  
 - Ensuring the logo appears **clearly** in the video for **at least 3 seconds** in **HD quality** and is **easily visible** (not hidden or covered).  
 
-© 2025 [Jynoqtra]
+© 2025 [ByteLightDev]
