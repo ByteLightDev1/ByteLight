@@ -8,7 +8,7 @@ Click [GUIDE](GUIDE.md) to see it.
 pip install ByteLight
 
 ## PyPI:
-[ByteLight PyPI](https://pypi.org/project/JynPopMod/)
+[ByteLight PyPI](https://pypi.org/project/ByteLight/)
 
 ## License:
 This project is licensed under the [Private Use License](LICENSE.md).
