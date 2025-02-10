@@ -1,4 +1,4 @@
-from JynPopMod import ConsoleCam
+from ByteLightProject import ConsoleCam
 
 cam = ConsoleCam.start()  # Starting to record.
 
