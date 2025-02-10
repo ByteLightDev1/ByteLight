@@ -1,8 +1,5 @@
-pip install JynPopMod
+pip install ByteLightProject
 
-from JynPopMod import *
-
-### Utility Functions:
 1. **`wait(key="s", num=1)`**: Pauses execution for a specified amount of time. The unit is controlled by the `key` parameter, which can be 's' for seconds, 'm' for minutes, or 'h' for hours.
    
 2. **`ifnull(_v, _d)`**: Returns `_d` if `_v` is `None` or an empty string. Otherwise, it returns `_v`.
@@ -45,7 +42,6 @@ from JynPopMod import *
 
 21. **`gs(func)`**: Returns the source code of the function `func` as a string.
 
-### String and Binary Functions:
 22. **`Jctb(input_string)`**: Converts a string into its binary representation, where each character is represented by a 10-bit binary value.
 
 23. **`Jbtc(binary_input)`**: Converts a binary string (produced by `Jctb`) back to its original string.
@@ -56,7 +52,6 @@ from JynPopMod import *
 
 26. **`reverse_string(string)`**: Reverses the input string.
 
-### Math and List Functions:
 27. **`calculate_factorial(number)`**: Recursively calculates the factorial of a number.
 
 28. **`generate_random_string(length=15)`**: (Defined twice, see above.)
@@ -93,7 +88,6 @@ from JynPopMod import *
 
 44. **`calculate_square_root(number)`**: Approximates the square root of `number` using the Newton-Raphson method.
 
-### File Handling and System Functions:
 45. **`find_files_by_extension(directory, extension)`**: Returns a list of files in the directory that have the specified file extension.
 
 46. **`get_curr_dir()`**: Returns the current working directory.
@@ -132,7 +126,6 @@ from JynPopMod import *
 
 63. **`show_file_properties(file_path)`**: Displays properties of a file (size and last modified time).
 
-### HTTP Server Functions:
 64. **`start_http_server(ip="0.0.0.0", port=8000)`**: Starts a simple HTTP server on the given `ip` and `port`.
 
 65. **`stop_http_server()`**: Stops the running HTTP server.
@@ -176,4 +169,121 @@ from JynPopMod import *
 
 82. **`ConsoleCam()`**: ConsoleCam lets u record and return the new changes in console in a spesific part.
 
-83. **`prn()`**: Same function as the `print()` but yet u can type faster.
+83. **`prn()`**: Prn lets u type faster and basically it just prints same as the print function.
+replace
+
+ 84. **`Key`**  
+- **`press()`**: Simulates pressing the assigned key.
+- **`release()`**: Simulates releasing the assigned key.
+
+ 85. **`copy_to_clipboard(text)`**:
+
+ 86. **`count_occurrences(lst, element)`**  
+**Counts the occurrences of `element` in the list `lst`**.
+- **Parameters**:  
+  - `lst`: List of items.
+  - `element`: The element to count in the list.
+
+ 87. **`get_curr_time()`**  
+**Returns the current date and time** in the format `YYYY-MM-DD HH:MM:SS`.
+
+ 88. **`is_palindrome(s)`**  
+**Checks if the string `s` is a palindrome**.  
+- **Returns**: `True` if `s` is the same backward and forward, otherwise `False`.
+
+ 89. **`get_min_max(list)`**  
+**Returns the minimum and maximum values from the list**.  
+- **Parameters**:  
+  - `list`: A list of numeric values.
+- **Returns**: Tuple with the minimum and maximum values.
+
+ 90. **`is_digits(input)`**  
+**Checks if the `input` is a string consisting of only digits**.  
+- **Returns**: `True` if `input` is numeric, otherwise `False`.
+
+ 91. **`create_dict(keys, values)`**  
+**Creates a dictionary by pairing the elements of `keys` and `values`**.  
+- **Parameters**:  
+  - `keys`: List of keys.
+  - `values`: List of corresponding values.
+
+ 92. **`square_number(input)`**  
+**Returns the square of the number `input`**.
+
+ 93. **`get_file_size(file_path)`**  
+**Gets the size of the file at `file_path`**.  
+- **Parameters**:  
+  - `file_path`: Path to the file.
+- **Returns**: The size of the file in bytes.
+
+ 94. **`find_duplicates(lst)`**  
+**Finds and returns the duplicate elements in the list `lst`**.  
+- **Parameters**:  
+  - `lst`: List of items to check for duplicates.
+
+ 95. **`get_average(list)`**  
+**Calculates the average (mean) of the numbers in the list `list`**.  
+- **Parameters**:  
+  - `list`: List of numbers.
+- **Returns**: The average of the numbers in the list, or 0 if the list is empty.
+
+ 96. **`divide(a, b)`**  
+**Divides `a` by `b` and handles division by zero**.  
+- **Parameters**:  
+  - `a`: The numerator.
+  - `b`: The denominator.
+- **Returns**: `a / b` if `b` is non-zero, otherwise `None`.
+
+ 97. **`extract_numbers(s)`**  
+**Extracts all numbers from the string `s`**.  
+- **Parameters**:  
+  - `s`: The string from which to extract numbers.
+- **Returns**: A list of integers extracted from the string.
+
+ 98. **`BinTrig`**:
+
+      1. **exit(root,trig)**: This method binds the window's close event to a custom function (`trig`). It's triggered when the user attempts to close the window.
+
+      2. **mouse_in(root,trig)**: It triggers a given function when the mouse enters the window area (`<Enter>` event).
+
+      3. **mouse_out(root,trig)**: Similar to `mouse_in`, but triggers the function when the mouse leaves the window area (`<Leave>` event).
+
+      4. **fullscreen(root,trig)**: This method checks whether the window is in fullscreen mode by comparing its size with the screen resolution. If the window is fullscreen, the specified function (`trig`) is called.
+
+      5. **minimized(root,trig)**: This method checks if the window is minimized (iconic) or withdrawn, triggering the specified function if the condition is true.
+
+      6. **width_height(root,widmin,heimin,trig)**: This method checks if the window's width or height exceeds specified minimum values (`widmin` and `heimin`). If so, it triggers the given function.
+
+      7. **key_press(root,key,trig)**: It binds a key press event (`<KeyPress-{key}>`) to a specific function (`trig`), where `{key}` is the key to be pressed.
+
+      8. **focus_gain(root,trig)**: This triggers the given function when the window or widget gains focus.
+
+      9. **focus_loss(root,trig)**: This triggers the given function when the window or widget loses focus.
+
+      10. **window_move(root,trig)**: It binds the window's movement event to trigger a custom function whenever the window is moved.
+
+      11. **resize(root,trig)**: Similar to `window_move`, but this event is triggered whenever the window is resized.
+
+      12. **close_shortcut(root,trig)**: Binds the `Alt+F4` shortcut key to close the window and trigger the specified function.
+
+      13. **mouse_button_press(root,button,trig)**: This triggers a function when a specified mouse button is pressed (`<Button-{button}>`).
+
+      14. **mouse_button_release(root,button,trig)**: Similar to `mouse_button_press`, but it triggers when the specified mouse button is released.
+
+      15. **double_click(root,trig)**: This triggers a function when the user double-clicks the left mouse button (`<Double-1>`).
+
+      16. **mouse_motion(root,trig)**: It binds the mouse motion event (`<Motion>`) to trigger a function whenever the mouse moves over the window.
+
+      17. **window_minimized(root,trig)**: Checks if the window is minimized (iconic state) and triggers the specified function if true.
+
+      18. **window_maximized(root,trig)**: This triggers the given function if the window is maximized.
+
+      19. **window_restored(root,trig)**: This triggers when the window is restored to its normal state (not minimized or maximized).
+
+      20. **mouse_wheel_scroll(root,trig)**: It triggers a function when the user scrolls the mouse wheel over the window.
+
+      21. **text_change(root,trig)**: This triggers the given function when text is changed in a widget, such as when a key is released in a text input field.
+
+      22. **focus_on_widget(widget,trig)**: This binds the focus-in event to trigger a function when the widget gains focus.
+
+      23. **focus_off_widget(widget,trig)**: This binds the focus-out event to trigger a function when the widget loses focus.
