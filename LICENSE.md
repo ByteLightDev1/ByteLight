@@ -3,13 +3,13 @@ What Users Can Do:
    Users can download and use the Software for personal projects, non-commercial projects, or educational purposes, as long as it's not for profit or commercial gain.
 
 2. **Incorporate into Larger Projects:**  
-   Users can include the Software in larger projects, either public or private, but **with proper attribution** (e.g., crediting the original author, "Jynoqtra").
+   Users can include the Software in larger projects, either public or private, but **with proper attribution** (e.g., crediting the original author, "ByteLightDev").
 
 3. **Modify for Personal Use:**  
    Users can modify the Software for their own use within a larger project, as long as any modifications are clearly documented (e.g., note which parts were changed).
 
 4. **Publicly Distribute:**  
-   Users can distribute their projects that use the Software publicly, but **U must provide proper attribution** to the original author and include the required notice ("This project includes software developed by [Jynoqtra], © 2025...").
+   Users can distribute their projects that use the Software publicly, but **U must provide proper attribution** to the original author and include the required notice ("This project includes software developed by [ByteLightDev], © 2025...").
 
 ---
 
@@ -32,8 +32,8 @@ What Users Can Do:
 **1. Permission for Commercial Use or Profit**  
 If you want to use the Software for **commercial purposes** (e.g., selling a product that includes it or using it in a business), you **must get permission** from the Licensor.  
 
-Alternatively, you can use the Software commercially **without prior permission** if you **credit "Jynoqtra" properly** by:  
-- Displaying the **Jynoqtra logo** in your commercial content.  
+Alternatively, you can use the Software commercially **without prior permission** if you **credit "ByteLightDev" properly** by:  
+- Displaying the **ByteLightDev logo** in your commercial content.  
 - Ensuring the logo appears **clearly** in the video for **at least 3 seconds** in **HD quality** and is **easily visible** (not hidden or covered).  
 
 © 2025 [ByteLightDev]
