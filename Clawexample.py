@@ -1,4 +1,4 @@
-from JynPopMod import claw                                 # C L A W
+from ByteLightProject import claw                          # C L A W
 subdomains_example = {                                     # u i d e
 "/sub1": "<h1>Subdomain 1</h1>",                           # s g a b
 "/sub2": "<h1>Subdomain 2</h1>",                           # t t p s
