@@ -1,67 +1,67 @@
 import tkinter as tk
 from ByteLightProject import BinTrig
 
-def on_close(event):
+def on_close(event=None):
     print("Window closed")
 
-def on_mouse_enter(event):
+def on_mouse_enter(event=None):
     print("Mouse entered")
 
-def on_mouse_leave(event):
+def on_mouse_leave(event=None):
     print("Mouse left")
 
-def on_fullscreen(event):
+def on_fullscreen(event=None):
     print("Window is fullscreen")
 
-def on_minimized(event):
+def on_minimized(event=None):
     print("Window is minimized")
 
-def on_resize(event):
+def on_resize(event=None):
     print(f"Window resized to {event.width}x{event.height}")
 
-def on_key_press(event):
+def on_key_press(event=None):
     print(f"Key pressed: {event.keysym}")
 
-def on_focus_gain(event):
+def on_focus_gain(event=None):
     print("Focus gained")
 
-def on_focus_loss(event):
+def on_focus_loss(event=None):
     print("Focus lost")
 
-def on_window_move(event):
+def on_window_move(event=None):
     print(f"Window moved to {event.x}, {event.y}")
 
-def on_mouse_press(event):
+def on_mouse_press(event=None):
     print("Mouse button pressed")
 
-def on_mouse_release(event):
+def on_mouse_release(event=None):
     print("Mouse button released")
 
-def on_double_click(event):
+def on_double_click(event=None):
     print("Mouse double-clicked")
 
-def on_mouse_motion(event):
+def on_mouse_motion(event=None):
     print("Mouse moved")
 
-def on_window_minimized(event):
+def on_window_minimized(event=None):
     print("Window minimized")
 
-def on_window_maximized(event):
+def on_window_maximized(event=None):
     print("Window maximized")
 
-def on_window_restored(event):
+def on_window_restored(event=None):
     print("Window restored")
 
-def on_scroll(event):
+def on_scroll(event=None):
     print("Mouse wheel scrolled")
 
-def on_text_change(event):
+def on_text_change(event=None):
     print("Text changed")
 
-def on_focus_on_widget(event):
+def on_focus_on_widget(event=None):
     print("Widget gained focus")
 
-def on_focus_off_widget(event):
+def on_focus_off_widget(event=None):
     print("Widget lost focus")
 
 root = tk.Tk()
