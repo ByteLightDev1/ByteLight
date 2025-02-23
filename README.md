@@ -8,7 +8,7 @@ Click [GUIDE](GUIDE.md) to see it.
 pip install ByteLightProject
 
 ## PyPI:
-[ByteLight PyPI](https://pypi.org/project/ByteLight/)
+[ByteLightProject PyPI](https://pypi.org/project/ByteLightProject/)
 
 ## License:
 This project is licensed under the [Private Use License](LICENSE.md).
