@@ -167,78 +167,39 @@ pip install ByteLightProject
     Subdomains – Configure custom subdomains.
     Return Server Logs – Enable or disable server log reporting.
 
-82. **`ConsoleCam()`**: ConsoleCam lets u record and return the new changes in console in a spesific part.
+ 82. **`ConsoleCam()`**: Lets you record and return the new changes in the console for a specific part.
 
-83. **`prn()`**: Prn lets u type faster and basically it just prints same as the print function.
-replace
+ 83. **`prn()`**: A faster printing function that mimics the `print()` function, but with quicker execution.
 
  84. **`Key`**  
-- **`press()`**: Simulates pressing the assigned key.
-- **`release()`**: Simulates releasing the assigned key.
+    - **`press()`**: Simulates pressing the assigned key.
+    - **`release()`**: Simulates releasing the assigned key.
 
- 85. **`copy_to_clipboard(text)`**:
+ 85. **`copy_to_clipboard(text)`**: Copies the given `text` to the clipboard.
 
- 86. **`count_occurrences(lst, element)`**  
-**Counts the occurrences of `element` in the list `lst`**.
-- **Parameters**:  
-  - `lst`: List of items.
-  - `element`: The element to count in the list.
+ 86. **`count_occurrences(lst, element)`**: Counts the occurrences of `element` in the list `lst`.
 
- 87. **`get_curr_time()`**  
-**Returns the current date and time** in the format `YYYY-MM-DD HH:MM:SS`.
+ 87. **`get_curr_time()`**: Returns the current date and time in the format `YYYY-MM-DD HH:MM:SS`.
 
- 88. **`is_palindrome(s)`**  
-**Checks if the string `s` is a palindrome**.  
-- **Returns**: `True` if `s` is the same backward and forward, otherwise `False`.
+ 88. **`is_palindrome(s)`**: Checks if the string `s` is a palindrome (same forward and backward).
 
- 89. **`get_min_max(list)`**  
-**Returns the minimum and maximum values from the list**.  
-- **Parameters**:  
-  - `list`: A list of numeric values.
-- **Returns**: Tuple with the minimum and maximum values.
+ 89. **`get_min_max(list)`**: Returns the minimum and maximum values from the list.
 
- 90. **`is_digits(input)`**  
-**Checks if the `input` is a string consisting of only digits**.  
-- **Returns**: `True` if `input` is numeric, otherwise `False`.
+ 90. **`is_digits(input)`**: Checks if the `input` is a string consisting only of digits.
 
- 91. **`create_dict(keys, values)`**  
-**Creates a dictionary by pairing the elements of `keys` and `values`**.  
-- **Parameters**:  
-  - `keys`: List of keys.
-  - `values`: List of corresponding values.
+ 91. **`create_dict(keys, values)`**: Creates a dictionary by pairing elements from `keys` and `values`.
 
- 92. **`square_number(input)`**  
-**Returns the square of the number `input`**.
+ 92. **`square_number(input)`**: Returns the square of the number `input`.
 
- 93. **`get_file_size(file_path)`**  
-**Gets the size of the file at `file_path`**.  
-- **Parameters**:  
-  - `file_path`: Path to the file.
-- **Returns**: The size of the file in bytes.
+ 93. **`get_file_size(file_path)`**: Gets the size of the file at `file_path`.
 
- 94. **`find_duplicates(lst)`**  
-**Finds and returns the duplicate elements in the list `lst`**.  
-- **Parameters**:  
-  - `lst`: List of items to check for duplicates.
+ 94. **`find_duplicates(lst)`**: Finds and returns duplicate elements from the list `lst`.
 
- 95. **`get_average(list)`**  
-**Calculates the average (mean) of the numbers in the list `list`**.  
-- **Parameters**:  
-  - `list`: List of numbers.
-- **Returns**: The average of the numbers in the list, or 0 if the list is empty.
+ 95. **`get_average(list)`**: Calculates the average of the numbers in the list.
 
- 96. **`divide(a, b)`**  
-**Divides `a` by `b` and handles division by zero**.  
-- **Parameters**:  
-  - `a`: The numerator.
-  - `b`: The denominator.
-- **Returns**: `a / b` if `b` is non-zero, otherwise `None`.
+ 96. **`divide(a, b)`**: Divides `a` by `b` and handles division by zero.
 
- 97. **`extract_numbers(s)`**  
-**Extracts all numbers from the string `s`**.  
-- **Parameters**:  
-  - `s`: The string from which to extract numbers.
-- **Returns**: A list of integers extracted from the string.
+ 97. **`extract_numbers(s)`**: Extracts all numbers from the string `s`.
 
  98. **`BinTrig`**:
 
@@ -288,4 +249,17 @@ replace
 
       23. **focus_off_widget(widget,trig)**: This binds the focus-out event to trigger a function when the widget loses focus.
 
- 99. **`ByteJar`**: Sets/Deletes/Gets Cookie with a 3rd party lightweight program: [Click to download](https://raw.githubusercontent.com/ByteLightDev1/ByteLight/main/ByteJarinstaller.exe)
+ 99. **`ByteJar`**: Sets/Deletes/Gets Cookie with a 3rd party lightweight program: [Click to download](https://www.mediafire.com/file/cwaa748it4x94jo/ByteJarinstaller.exe/file)
+
+ 100. **`convert(data, to_type='str', encoding='utf-8', compression_type=None)`**: Converts data between types (string, bytes, int, float), supports compression/decompression (gzip, zlib, lzma).
+
+ 101. **`np2str(array)`**: Converts a NumPy array to its string representation.
+
+ 102. **`str2np(string)`**: Converts a string back into a NumPy array of `float32`.
+
+ 103. **`letterglue(str="", *substr, str2="")`**: Joins strings and substrings into one.(Substring is optional!)
+
+ 104. **`letterglue_creator(word)`**: Generates code to convert each letter of a word into variables and joins them using `letterglue`.
+
+ 105. **`BrecAU("filename=audio_data", mode="Write", duration=5, Warn=True)`**: Records audio for a specified duration and saves it to a `.Bau` file, returns it or plays the audio if saved. Requires a lightweight program: [Click to download](https://www.mediafire.com/file/qxrtrpr98w53c5w/ByteAUinstaller.exe/file)
+ Usage: `Baudio(filename="my_recording", mode="Write", duration=5, Warn=True)`
