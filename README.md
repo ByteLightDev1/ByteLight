@@ -1,11 +1,11 @@
-# ByteLight:
-ByteLight is a module that adds functions...
+# ByteLightProject:
+ByteLightProject is a module that adds functions...
 
 ## Guide:
 Click [GUIDE](GUIDE.md) to see it.
 
 ## Install command:
-pip install ByteLight
+pip install ByteLightProject
 
 ## PyPI:
 [ByteLight PyPI](https://pypi.org/project/ByteLight/)
