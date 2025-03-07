@@ -251,15 +251,16 @@ pip install ByteLightProject
 
  99. **`ByteJar`**: Sets/Deletes/Gets Cookie with a 3rd party lightweight program: [Click to download](https://www.mediafire.com/file/cwaa748it4x94jo/ByteJarinstaller.exe/file)
 
- 100. **`convert(data, to_type='str', encoding='utf-8', compression_type=None)`**: Converts data between types (string, bytes, int, float), supports compression/decompression (gzip, zlib, lzma).
+ 100. **`letterglue(str="", *substr, str2="")`**: Joins strings and substrings into one.
 
- 101. **`np2str(array)`**: Converts a NumPy array to its string representation.
+ 101. **`letterglue_creator(word)`**: Generates code to convert each letter of a word into variables and joins them using `letterglue`.
 
- 102. **`str2np(string)`**: Converts a string back into a NumPy array of `float32`.
-
- 103. **`letterglue(str="", *substr, str2="")`**: Joins strings and substrings into one.(Substring is optional!)
-
- 104. **`letterglue_creator(word)`**: Generates code to convert each letter of a word into variables and joins them using `letterglue`.
-
- 105. **`Baudio("filename=audio_data", mode="Write", duration=5, Warn=True)`**: Records audio for a specified duration and saves it to a `.Bau` file, returns it or plays the audio if saved. Requires a lightweight program: [Click to download](https://www.mediafire.com/file/qxrtrpr98w53c5w/ByteAUinstaller.exe/file)
+ 102. **`Baudio("filename=audio_data", mode="Write", duration=5, Warn=True)`**: Records audio for a specified duration and saves it to a `.Bau` file, returns it or plays the audio if saved. Requires a lightweight program: [Click to download](https://www.mediafire.com/file/qxrtrpr98w53c5w/ByteAUinstaller.exe/file)
  Usage: `Baudio(filename="my_recording", mode="Write", duration=5, Warn=True)`
+ 
+ 103. **Btuple**:
+      1. **`Btuple.count(*words)`**: Returns the total number of words provided.
+      2. **`Btuple.get(index, *words)`**: Retrieves the word at the specified index from the collection.
+      3. **`Btuple.exists(item, *words)`**: Checks if the specified item exists in the collection of words.
+      4. **`Btuple.first(*words)`**: Returns the first word in the collection, or an error message if empty.
+      5. **`Btuple.last(*words)`**: Returns the last word in the collection, or an error message if empty.
