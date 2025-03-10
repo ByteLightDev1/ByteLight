@@ -263,4 +263,28 @@ pip install ByteLightProject
       2. **`Btuple.get(index, *words)`**: Retrieves the word at the specified index from the collection.
       3. **`Btuple.exists(item, *words)`**: Checks if the specified item exists in the collection of words.
       4. **`Btuple.first(*words)`**: Returns the first word in the collection, or an error message if empty.
-      5. **`Btuple.last(*words)`**: Returns the last word in the collection, or an error message if empty.
+      5. **`Btuple.last(*words)`**: Returns the last word in the collection, or an error message if empty. 
+
+ 104. **`isgreater(*nums)`**: Compares two numbers and returns `True` if the first is greater than the second. Displays an error if the input is invalid.  
+
+ 105. **`runwfallback(func, fallback_func)`**: Executes `func()` and, if it fails, runs `fallback_func()` instead.  
+
+ 106. **`retry(func, retries=3, delay=1)`**: Tries running `func()` multiple times, pausing between attempts. Returns `None` if all attempts fail.  
+
+ 107. **`fftime(func)`**: Measures and prints the execution time of `func()`.  
+
+ 108. **`debug(func)`**: Logs the function call, arguments, and return value for debugging.  
+
+ 109. **`paste_from_clipboard()`**: Retrieves and returns text stored in the system clipboard.  
+
+ 110. **`watch_file(filepath, callback)`**: Monitors `filepath` for changes and triggers `callback()` when modified.  
+
+ 111. **`is_website_online(url)`**: Checks if the given `url` is reachable and returns `True` if the site is online.  
+
+ 112. **`shorten_url(long_url)`**: Generates and returns a shortened version of `long_url`.  
+
+ 113. **`celsius_to_fahrenheit(c)`**: Converts temperature `c` from Celsius to Fahrenheit.  
+
+ 114. **`fahrenheit_to_celsius(f)`**: Converts temperature `f` from Fahrenheit to Celsius.  
+
+ 115. **`efv(string)`** efv = (exec for variables) : Parses `string` in the code. U can use it like `parser = efv("x=5,y=2");print(parser['y'])` `Out:2` and if `parser['x']` it'd print `5`
