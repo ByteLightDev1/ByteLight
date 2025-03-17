@@ -287,4 +287,6 @@ pip install ByteLightProject
 
  114. **`fahrenheit_to_celsius(f)`**: Converts temperature `f` from Fahrenheit to Celsius.  
 
- 115. **`efv(string)`** efv = (exec for variables) : Parses `string` in the code. U can use it like `parser = efv("x=5,y=2");print(parser['y'])` `Out:2` and if `parser['x']` it'd print `5`
+ 115. **`efv(string)`**: efv = (exec for variables) : Parses `string` in the code. U can use it like `parser = efv("x=5,y=2");print(parser['y'])` `Out:2` and if parser['x'] it'd return 5
+
+ 116. **`Hpass(limit=30)`**: Generates a strong, hard-level password with a length specified by `limit`.
